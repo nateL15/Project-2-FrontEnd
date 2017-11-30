@@ -37,19 +37,11 @@ const onSignOut = function (event) {
     .catch(ui.signOutFailure)
 }
 
-const onSaveNote = function (event) {
-  event.preventDefault()
-  api.saveNote()
-    .then(ui.saveNoteSuccess)
-    .catch(ui.saveNoteFailure)
-}
-
-const addHandlers = function () {
+const addHandlers = function (event) {
   $('#sign-in').on('submit', onSignIn)
   $('#sign-up').on('submit', onSignUp)
   $('#sign-out').on('submit', onSignOut)
   $('#change-password').on('submit', onChangePassword)
-  $('#save-note').on('submit', onSaveNote)
 }
 
 module.exports = {
@@ -58,6 +50,5 @@ module.exports = {
   onSignOut,
   onSignIn,
   getFormFields,
-  onSaveNote,
   onSignUp
 }

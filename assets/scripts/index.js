@@ -2,10 +2,11 @@
 
 const setAPIOrigin = require('../../lib/set-api-origin')
 const config = require('./config')
-// const login = require('./auth/events.js')
+const login = require('./auth/events.js')
 
 $(() => {
   setAPIOrigin(location, config)
+  login.addHandlers()
 })
 
 const hideForms = function () {

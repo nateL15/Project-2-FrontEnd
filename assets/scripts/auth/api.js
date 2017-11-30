@@ -38,21 +38,9 @@ const signOut = function () {
   })
 }
 
-const saveNote = function (data) {
-  return $.ajax({
-    url: config.apiOrigin + '/save-note/' + store.user.ud,
-    method: 'POST',
-    headers: {
-      Authorization: 'Token token=' + store.user.token
-    }
-  })
-}
-
 module.exports = {
-
   signUp,
   signIn,
   changePassword,
-  saveNote,
   signOut
 }
