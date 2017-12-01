@@ -9,13 +9,13 @@ $(() => {
   login.addHandlers()
 })
 
-const hideForms = function () {
-  $('#change-password').hide()
-  $('#sign-out').hide()
-  $('#save-note').hide()
-}
-
-hideForms()
+// const hideForms = function () {
+//   $('#change-password').hide()
+//   $('#sign-out').hide()
+//   $('#save-note').hide()
+// }
+//
+// hideForms()
 
 // const loginForms = function (){
 //   $('#change-password').show()

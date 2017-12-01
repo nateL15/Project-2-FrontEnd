@@ -37,25 +37,30 @@
        </form>
 
          <h2>Change password</h2>
-         <form id="change-password">
+
          <fieldset>
+           <form id="change-password">
          <input type="password" name="passwords[old]" placeholder="Old Password">
 
            <input type="password" name="passwords[new]" placeholder="New Password">
 
              <input type="password" name="passwords[new]" placeholder="Confirm New Password" required=""/>
-
          <button class="btn btn-lg btn-primary" type="submit">Change Password</button>
+         </form>
        </fieldset>
-       </form>
-
-
-     <textarea rows="10" cols="50">
-       Take notes here
-      </textarea>
+<br>
 <form id="save-note">
-       <button class="btn btn-lg btn-primary" type="submit">Save Note</button>
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Champion">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Note">
+      <button class="btn btn-lg btn-primary" type="submit">Save Note</button>
+    </div>
+  </div>
 </form>
+<br>
 
    <form id="sign-out">
          <fieldset>

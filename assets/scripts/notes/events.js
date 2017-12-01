@@ -13,5 +13,6 @@ const addHandlers = function (event) {
 }
 
 module.exports = {
-  addHandlers
+  addHandlers,
+  onSaveNote
 }
