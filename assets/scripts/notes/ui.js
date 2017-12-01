@@ -2,7 +2,7 @@
 
 const saveNoteSuccess = function (data) {
   console.log(data)
-  $('#message').text('Saved Note Successfully')
+  $('#message').text('Champion note created succesfully!')
 }
 
 const saveNoteFailure = function (error) {

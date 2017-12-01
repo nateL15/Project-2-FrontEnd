@@ -3,10 +3,12 @@
 const setAPIOrigin = require('../../lib/set-api-origin')
 const config = require('./config')
 const login = require('./auth/events.js')
+const notes = require('./notes/events.js')
 
 $(() => {
   setAPIOrigin(location, config)
   login.addHandlers()
+  notes.addHandlers()
 })
 
 // const hideForms = function () {
@@ -14,7 +16,6 @@ $(() => {
 //   $('#sign-out').hide()
 //   $('#save-note').hide()
 // }
-//
 // hideForms()
 
 // const loginForms = function (){

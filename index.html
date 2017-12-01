@@ -13,18 +13,20 @@
     </head>
     <body class="container-fluid">
 
-      <h2>Login</h2>
+
        <form id="sign-in">
          <fieldset>
+           <h2>Login</h2>
          <input type="text" name="credentials[email]" placeholder="Email Address"/>
          <input type="password" name="credentials[password]" placeholder="Password">
          <button type="submit" class="btn btn-lg btn-primary">Login</button>
        </fieldset>
        </form>
 
-       <h2>Register</h2>
+
        <form id="sign-up">
        <fieldset>
+         <h2>Register</h2>
        <input type ="text"
        name="credentials[email]" placeholder="Email Address">
 
@@ -36,10 +38,11 @@
        </fieldset>
        </form>
 
-         <h2>Change password</h2>
+
 
          <fieldset>
            <form id="change-password">
+        <h2>Change password</h2>
          <input type="password" name="passwords[old]" placeholder="Old Password">
 
            <input type="password" name="passwords[new]" placeholder="New Password">
@@ -52,10 +55,10 @@
 <form id="save-note">
   <div class="row">
     <div class="col">
-      <input type="text" class="form-control" placeholder="Champion">
+      <input type="text" name="champion" class="form-control" placeholder="Champion">
     </div>
     <div class="col">
-      <input type="text" class="form-control" placeholder="Note">
+      <input type="text" name="note" class="form-control" placeholder="Note">
       <button class="btn btn-lg btn-primary" type="submit">Save Note</button>
     </div>
   </div>
