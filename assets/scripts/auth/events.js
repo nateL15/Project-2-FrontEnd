@@ -67,6 +67,7 @@ const addHandlers = function (event) {
   $('#sign-out').on('submit', hideNoteForms)
   $('#sign-in').on('submit', onSignIn)
   $('#sign-up').on('submit', onSignUp)
+  $('#sign-up').on('submit', clearAuthForms)
   $('#sign-out').on('submit', onSignOut)
   $('#sign-out').on('submit', hideLoggedInForms)
   $('#sign-out').on('submit', clearAuthForms)
