@@ -60,7 +60,7 @@ const hideNoteForms = function () {
   $('#update-note').hide()
   $('#sign-in').show()
   $('#sign-up').show()
-  $('#message').empty()
+  $('#message').text('Signed out succesfully')
 }
 
 const addHandlers = function (event) {

@@ -18,6 +18,10 @@ const getNoteSuccess = (data) => {
   $('#message').text('Notes retrieved succesfully!')
 }
 
+const getNoteFailure = function (data) {
+  $('#message').text('Failed to get notes')
+}
+
 const deleteNoteSuccess = function (data) {
   $('#message').text('Note deleted successfully!')
 }
@@ -39,6 +43,7 @@ module.exports = {
   saveNoteSuccess,
   saveNoteFailure,
   getNoteSuccess,
+  getNoteFailure,
   showNotes,
   deleteNoteSuccess,
   deleteNoteFailure,
