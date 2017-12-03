@@ -1,0 +1,22 @@
+{{#each notes as |note|}}
+
+
+  <ul data-id="{{note.id}}">
+  <li>{{#if note.note}}
+    <large>Note: {{note.note}}</large>
+  {{else}}
+    Note not found
+  {{/if}}</li>
+    <li>{{#if note.champion}}
+      <large>Champion: {{note.champion}}</large>
+    {{else}}
+      Champion not found
+    {{/if}}</li>
+      <li>{{#if note.id}}
+        <large>ID: {{note.id}}</large>
+      {{else}}
+        Note ID not found
+      {{/if}}</li>
+
+  </ul>
+{{/each}}

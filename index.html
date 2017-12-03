@@ -13,6 +13,7 @@
     </head>
     <body class="container-fluid">
 
+      <h1>League of Legends Champion Notes</h1>
 
        <form id="sign-in">
          <fieldset>
@@ -51,6 +52,15 @@
          <button class="btn btn-lg btn-primary" type="submit">Change Password</button>
          </form>
        </fieldset>
+
+       <form id="sign-out">
+             <fieldset>
+             <button class="btn btn-lg btn-primary" type="submit">Sign Out</button>
+           </fieldset>
+           </form>
+
+<br>
+
 <br>
 <form id="save-note">
   <div class="row">
@@ -65,11 +75,45 @@
 </form>
 <br>
 
-   <form id="sign-out">
-         <fieldset>
-         <button class="btn btn-lg btn-primary" type="submit">Sign Out</button>
-       </fieldset>
-       </form>
-         <p id="message"></p>
-    </body>
+<br>
+<form id="update-note">
+  <div class="row">
+    <div class="col">
+      <input type="text" name="champion" class="form-control" placeholder="Champion">
+    </div>
+    <div class="col">
+      <input type="text" name="note" class="form-control" placeholder="Note">
+      <div class="col">
+        <input type="text" name="note[id]" id="update-by-note-id" class="form-control" placeholder="Note ID">
+      <button class="btn btn-lg btn-primary" type="submit">Update Note</button>
+    </div>
+    </div>
+  </div>
+</form>
+<br>
+
+<br>
+<form id="delete-note">
+  <div class="row">
+    <div class="col">
+      <input type="text" name="note[id]" id="delete-by-note-id" class="form-control" placeholder="Delete by Note ID">
+      <button class="btn btn-lg btn-primary" type="submit">Delete Note</button>
+    </div>
+  </div>
+</form>
+
+<br>
+<form id="get-note">
+      <fieldset>
+      <button class="btn btn-lg btn-primary" name="submit" type="submit">Get Notes</button>
+    </fieldset>
+    </form>
+
+<div class="display-notes" id="display-notes">
+  <br>
+</div>
+
+  <p id="message"></p>
+
+  </body>
 </html>

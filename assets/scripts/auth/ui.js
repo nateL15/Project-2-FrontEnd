@@ -11,6 +11,14 @@ const signInSuccess = function (data) {
   store.user = data.user
   console.log('store is ', store)
   $('#message').text('Signed in succesfully')
+  $('#sign-up').hide()
+  $('#sign-in').hide()
+  $('#change-password').show()
+  $('#sign-out').show()
+  $('#save-note').show()
+  $('#get-note').show()
+  $('#delete-note').show()
+  $('#update-note').show()
 }
 
 const signUpFailure = function (error) {
@@ -36,6 +44,8 @@ const changePasswordFailure = function (error) {
 const signOutSuccesss = function (data) {
   console.log(data)
   $('#message').text('Signed Out Successfully')
+  $('#sign-up').show()
+  $('#sign-in').show()
 }
 
 const signOutFailure = function (error) {

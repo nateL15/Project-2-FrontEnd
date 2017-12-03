@@ -14,7 +14,7 @@ const saveNote = function (info) {
 
 const updateNote = function (data) {
   return $.ajax({
-    url: config.apiOrigin + '/note/' + data.note.id,
+    url: config.apiOrigin + '/notes/' + data.note.id,
     method: 'PATCH',
     headers: {
       Authorization: 'Token token=' + store.user.token
@@ -22,7 +22,32 @@ const updateNote = function (data) {
     data
   })
 }
+
+const getNote = function (data) {
+  return $.ajax({
+    url: config.apiOrigin + '/notes/',
+    method: 'GET',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    data
+  })
+}
+
+const deleteNote = function (data) {
+  return $.ajax({
+    url: config.apiOrigin + '/notes/' + data.note.id,
+    method: 'DELETE',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    data
+  })
+}
+
 module.exports = {
   saveNote,
-  updateNote
+  updateNote,
+  getNote,
+  deleteNote
 }
