@@ -14,6 +14,7 @@ const saveNoteFailure = function (error) {
 
 const getNoteSuccess = (data) => {
   const onShowNotes = showNotes({ notes: data.notes })
+  $('.display-notes').empty()
   $('.display-notes').append(onShowNotes)
   $('#message').text('Notes retrieved succesfully!')
 }
@@ -31,7 +32,6 @@ const deleteNoteFailure = function (data) {
 }
 
 const updateNoteSuccess = function (data) {
-  console.log(data)
   $('#message').text('Note succesfully updated!')
 }
 
