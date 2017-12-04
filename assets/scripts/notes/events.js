@@ -53,7 +53,7 @@ hideNoteForm()
 const addHandlers = function (event) {
   $('#save-note').on('submit', onSaveNote)
   $('#save-note').on('submit', clearNoteForm)
-  $('#get-note').on('submit', onUpdateNote)
+  $('#get-note').on('submit', onGetNote)
   $('#delete-note').on('submit', onDeleteNote)
   $('#delete-note').on('submit', clearNoteForm)
   $('#update-note').on('submit', onUpdateNote)
@@ -65,6 +65,5 @@ module.exports = {
   clearNoteForm,
   onUpdateNote,
   onDeleteNote,
-  // hideNoteForm,
   onGetNote
 }

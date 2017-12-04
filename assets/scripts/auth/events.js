@@ -63,13 +63,23 @@ const hideNoteForms = function () {
   $('#message').text('Signed out succesfully')
 }
 
+const clearNoteForms = function () {
+  $('#update-note').trigger('reset')
+  $('#get-note').trigger('reset')
+  $('#save-note').trigger('reset')
+  $('.display-notes').empty()
+}
+
 const addHandlers = function (event) {
   $('#sign-out').on('submit', hideNoteForms)
   $('#sign-in').on('submit', onSignIn)
   $('#sign-up').on('submit', onSignUp)
+  $('#sign-up').on('submit', clearAuthForms)
   $('#sign-out').on('submit', onSignOut)
   $('#sign-out').on('submit', hideLoggedInForms)
   $('#sign-out').on('submit', clearAuthForms)
+  $('#sign-out').on('submit', hideNoteForms)
+  $('#sign-out').on('submit', clearNoteForms)
   $('#change-password').on('submit', onChangePassword)
   $('#change-password').on('submit', clearAuthForms)
 }

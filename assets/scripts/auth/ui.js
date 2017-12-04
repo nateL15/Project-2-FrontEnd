@@ -4,6 +4,7 @@ const store = require('../store')
 const signUpSuccess = function (data) {
   console.log(data)
   $('#message').text('Signed up succesfully')
+  $('sign-up').trigger('reset')
 }
 
 const signInSuccess = function (data) {
