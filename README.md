@@ -1,5 +1,5 @@
 Front End for Full Stack Project
-Made with JS, Jquery, HTML/CSS, Handlebars
+Made with JS, Jquery, HTML/CSS, Handlebars, Bootstrap
 
 A tool for making notes about League of Legends champions, users can view
 and edit their notes.
