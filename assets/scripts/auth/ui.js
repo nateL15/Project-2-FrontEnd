@@ -2,15 +2,12 @@
 const store = require('../store')
 
 const signUpSuccess = function (data) {
-  console.log(data)
   $('#message').text('Signed up succesfully')
   $('sign-up').trigger('reset')
 }
 
 const signInSuccess = function (data) {
-  console.log('data is ', data)
   store.user = data.user
-  console.log('store is ', store)
   $('#message').text('Signed in succesfully')
   $('#sign-up').hide()
   $('#sign-in').hide()
@@ -23,23 +20,19 @@ const signInSuccess = function (data) {
 }
 
 const signUpFailure = function (error) {
-  console.error(error)
-  $('#message').text('Error on sign up')
+  $('#message').text('Error on sign up', error)
 }
 
 const signInFailure = function (error) {
-  console.log(error)
-  $('#message').text('Error on sign in')
+  $('#message').text('Error on sign in', error)
 }
 
 const changePasswordSuccess = function (data) {
-  console.log(data)
   $('#message').text('Changed password succesfully')
 }
 
 const changePasswordFailure = function (error) {
-  console.log(error)
-  $('#message').text('Error on change password')
+  $('#message').text('Error on change password', error)
 }
 
 const signOutSuccesss = function (data) {
@@ -50,8 +43,7 @@ const signOutSuccesss = function (data) {
 }
 
 const signOutFailure = function (error) {
-  console.log(error)
-  $('#message').text('Error on Sign Out')
+  $('#message').text('Error on Sign Out', error)
 }
 
 module.exports = {

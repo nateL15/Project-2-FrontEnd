@@ -3,13 +3,11 @@
 const showNotes = require('../templates/show-notes.handlebars')
 
 const saveNoteSuccess = function (data) {
-  console.log(data)
   $('#message').text('Champion note created succesfully!')
 }
 
 const saveNoteFailure = function (error) {
-  console.log(error)
-  $('#message').text('Error Saving Note')
+  $('#message').text('Error Saving Note', error)
 }
 
 const getNoteSuccess = (data) => {
