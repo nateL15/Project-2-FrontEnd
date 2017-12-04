@@ -9,7 +9,8 @@ robust information
 
 This was definitely a challenging project for me. Especially the CREATE/DELETE/
 GET/UPDATE functions, however after getting those down the rest of the Project
-fell into place pretty well. Overall, I find back end work more enjoyable than
+fell into place pretty well. After tackling the backend, I moved to the front end,
+which after the last project felt a bit easier. Overall, I find back end work more enjoyable than
 front end so far.
 
 Link to deployed site: https://natel15.github.io/Project-2-FrontEnd/
